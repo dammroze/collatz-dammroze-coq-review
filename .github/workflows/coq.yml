@@ -1,0 +1,29 @@
+name: Coq Build Check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  coq-build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Coq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y coq
+
+      - name: Show Coq version
+        run: |
+          coqc --version
+
+      - name: Build Coq files
+        run: |
+          cd coq
+          make clean || true
+          make -j1
