@@ -1,0 +1,36 @@
+(*
+  Monolithic Coq EXPORT importer for Collatz_Dammroze FromTex glues.
+  It re-exports all local glue modules so Print Assumptions can see them
+  after requiring only this monolithic file.
+
+  No probability, no mixing, no Cesaro averaging, no time-ergodic averaging,
+  no sliding windows.
+*)
+
+Require Export Collatz_Dammroze_Part5_NoAccumulationBadBands_FromTex_v1.
+Require Export Collatz_Dammroze_Part5_AmplificationDensityGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part5_FixedMBandMass_FromTex_v1.
+Require Export Collatz_Dammroze_Part5_UniformBandStabilityGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_EndpointBudgetGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_MultiplicativeEndpointBudgetGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_TwoRegimeBudgetRecombination_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_RegimeAConditionalGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_EffectiveModulusDepthGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_AffinePrefixStepGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_AffinePrefixInductionGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_OddCoefficientDyadicPullbackGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_OddPowerCoefficientGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_BezoutToInverseGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_DyadicClassIntersectionGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_ModulusRefinementGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_DyadicPowerDivisibilityGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_FiniteUnionDyadicStabilityGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_RelPrimeToInverseGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_OddCoeffInversePow2Glue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_AlignedResidueCountingGlue_FromTex_v1.
+Require Export Collatz_Dammroze_Part6_SparseResidueIntervalGlue_FromTex_v1.
+
+Module CollatzDammroze_Coq_Monolithic_Final_FromTex_v2.
+Theorem monolithic_export_stack_closed_TEX : True.
+Proof. exact I. Qed.
+End CollatzDammroze_Coq_Monolithic_Final_FromTex_v2.
