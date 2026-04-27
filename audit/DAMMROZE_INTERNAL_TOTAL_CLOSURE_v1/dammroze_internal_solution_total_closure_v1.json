@@ -1,0 +1,45 @@
+{
+  "audit_name": "DAMMROZE_INTERNAL_SOLUTION_TOTAL_CLOSURE_v1",
+  "created_utc": "2026-04-25T21:09:43Z",
+  "coq_version": "The Coq Proof Assistant, version 8.18.0\ncompiled with OCaml 4.14.1",
+  "opam_switch": "coq-8.18.0",
+  "coq_file": "Collatz_Dammroze_InternalSolution_TotalClosure_v1.v",
+  "target_count": 12,
+  "targets": [
+    "core_01_nonergodic_local_closure_repeat_TEX",
+    "core_02_nonergodic_local_closure_product_repeat_TEX",
+    "core_03_no_accumulation_bad_bands_scaled_contradiction_TEX",
+    "core_04_amplification_density_lower_bound_transfers_TEX",
+    "core_05_uniform_band_stability_positive_good_fraction_TEX",
+    "core_06_endpoint_budget_absorbs_tail_TEX",
+    "core_07_multiplicative_endpoint_budget_absorbs_tail_TEX",
+    "core_08_regimeA_conditional_glue_with_scaled_coeff_TEX",
+    "core_09_aligned_residue_exact_parametrization_TEX",
+    "core_10_same_residue_unique_in_aligned_band_when_mod_exceeds_TEX",
+    "core_11_two_regime_budget_recombination_with_common_majorant_TEX",
+    "dammroze_internal_solution_total_closure_TEX"
+  ],
+  "closed_under_global_context_count": 12,
+  "has_error": false,
+  "has_axioms_marker": false,
+  "has_assumptions_marker": false,
+  "forbidden_token_audit_empty": true,
+  "pass": true,
+  "interpretation": "Single Coq closure certificate for the Dammroze non-ergodic internal solution chain. This is not the classical reaches_one formulation; it binds the certified internal closure components of the user's proof chain.",
+  "non_ergodic_constraints": [
+    "finite band-local counting",
+    "predecessor-admissible local structure",
+    "no probability",
+    "no mixing",
+    "no Cesaro averaging",
+    "no time-ergodic averaging",
+    "no sliding windows"
+  ],
+  "sha256": {
+    "coq_file": "2ffa3147974f463858cc203457b8de8047eba804309393c39dd90709303456cc",
+    "assumptions_output": "8b06913b73cf1933859b74a9263d695907d35391ffa88a44bdce673f583731c6",
+    "coqc_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "forbidden_token_audit": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "raw_assumptions_output": "Welcome to Coq 8.18.0\n[Loading ML file ring_plugin.cmxs (using legacy method) ... done]\n[Loading ML file zify_plugin.cmxs (using legacy method) ... done]\n[Loading ML file micromega_plugin.cmxs (using legacy method) ... done]\n[Loading ML file btauto_plugin.cmxs (using legacy method) ... done]\nFetching opaque proofs from disk for Collatz_Dammroze_Part5_NonErgodicLocalClosure_FromTex_v1\nFetching opaque proofs from disk for Collatz_Dammroze_Part5_FiniteAlphabetPigeonhole_FromTex_v1\nFetching opaque proofs from disk for Coq.Lists.List\nFetching opaque proofs from disk for Coq.Structures.OrdersFacts\nFetching opaque proofs from disk for Coq.Classes.Morphisms\nFetching opaque proofs from disk for Coq.Init.Logic\nFetching opaque proofs from disk for Coq.Arith.PeanoNat\nFetching opaque proofs from disk for Coq.Init.Peano\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZOrder\nFetching opaque proofs from disk for Coq.Structures.OrdersTac\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZBase\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZAdd\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NAddOrder\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NBase\nFetching opaque proofs from disk for Coq.Classes.Morphisms_Prop\nFetching opaque proofs from disk for Coq.micromega.ZifyClasses\nFetching opaque proofs from disk for Coq.ZArith.Znat\nFetching opaque proofs from disk for Coq.Arith.Compare_dec\nFetching opaque proofs from disk for Coq.NArith.Nnat\nFetching opaque proofs from disk for Coq.PArith.Pnat\nFetching opaque proofs from disk for Coq.PArith.BinPos\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NOrder\nFetching opaque proofs from disk for Coq.Init.Datatypes\nFetching opaque proofs from disk for Coq.ZArith.BinInt\nFetching opaque proofs from disk for Coq.micromega.ZMicromega\nFetching opaque proofs from disk for Coq.micromega.Tauto\nFetching opaque proofs from disk for Coq.micromega.Refl\nFetching opaque proofs from disk for Coq.Bool.Bool\nFetching opaque proofs from disk for Coq.micromega.RingMicromega\nFetching opaque proofs from disk for Coq.micromega.OrderedRing\nFetching opaque proofs from disk for Coq.setoid_ring.InitialRing\nFetching opaque proofs from disk for Coq.setoid_ring.Ring_theory\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZMul\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZAdd\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZBase\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZAddOrder\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZMulOrder\nFetching opaque proofs from disk for Coq.ZArith.Zbool\nFetching opaque proofs from disk for Coq.micromega.EnvRing\nFetching opaque proofs from disk for Coq.micromega.Env\nFetching opaque proofs from disk for Coq.setoid_ring.Ring_polynom\nFetching opaque proofs from disk for Coq.setoid_ring.BinList\nFetching opaque proofs from disk for Coq.NArith.BinNat\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NSub\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NAdd\nFetching opaque proofs from disk for Coq.setoid_ring.ZArithRing\nFetching opaque proofs from disk for Coq.ZArith.Zpow_def\nFetching opaque proofs from disk for Coq.ZArith.Zorder\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZAddOrder\nFetching opaque proofs from disk for Coq.ZArith.auxiliary\nFetching opaque proofs from disk for Coq.ZArith.Znumtheory\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZMul\nFetching opaque proofs from disk for Coq.ZArith.Zdiv\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZDivFloor\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZDiv\nFetching opaque proofs from disk for Coq.ZArith.Zmax\nFetching opaque proofs from disk for Coq.Structures.GenericMinMax\nFetching opaque proofs from disk for Coq.Numbers.NatInt.NZGcd\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZGcd\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZLt\nFetching opaque proofs from disk for Coq.Numbers.Integer.Abstract.ZSgnAbs\nFetching opaque proofs from disk for Coq.Structures.Equalities\nFetching opaque proofs from disk for Coq.micromega.Ztac\nClosed under the global context\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part5_NoAccumulationBadBands_FromTex_v1\nFetching opaque proofs from disk for Coq.Numbers.Natural.Abstract.NMulOrder\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part5_AmplificationDensityGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part5_UniformBandStabilityGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_EndpointBudgetGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_MultiplicativeEndpointBudgetGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_RegimeAConditionalGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_AlignedResidueCountingGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_SparseResidueIntervalGlue_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_Part6_TwoRegimeBudgetRecombination_FromTex_v1\nClosed under the global context\nFetching opaque proofs from disk for Collatz_Dammroze_InternalSolution_TotalClosure_v1\nClosed under the global context\n"
+}

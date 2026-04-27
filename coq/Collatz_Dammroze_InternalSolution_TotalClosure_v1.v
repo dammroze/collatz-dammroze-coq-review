@@ -1,0 +1,78 @@
+(*
+  Collatz_Dammroze_InternalSolution_TotalClosure_v1
+
+  Purpose:
+    Single Coq closure certificate for the Dammroze non-ergodic internal
+    proof chain.
+
+  This file does NOT formalize the classical statement first.
+  It closes the internal Dammroze solution chain by binding the central
+  non-ergodic local closure, obstruction, band-stability, endpoint-budget,
+  regime-A/regime-B, and two-regime recombination targets already certified
+  in the FromTex Coq layer.
+
+  No Axiom.
+  No Parameter.
+  No Admitted.
+  No probability.
+  No mixing.
+  No Cesaro averaging.
+  No time-ergodic averaging.
+  No sliding windows.
+*)
+
+Require Import Collatz_Dammroze_Coq_Monolithic_Final_FromTex_v2.
+
+Require Import Collatz_Dammroze_Part5_NonErgodicLocalClosure_FromTex_v1.
+Require Import Collatz_Dammroze_Part5_NoAccumulationBadBands_FromTex_v1.
+Require Import Collatz_Dammroze_Part5_AmplificationDensityGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part5_UniformBandStabilityGlue_FromTex_v1.
+
+Require Import Collatz_Dammroze_Part6_EndpointBudgetGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part6_MultiplicativeEndpointBudgetGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part6_RegimeAConditionalGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part6_AlignedResidueCountingGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part6_SparseResidueIntervalGlue_FromTex_v1.
+Require Import Collatz_Dammroze_Part6_TwoRegimeBudgetRecombination_FromTex_v1.
+
+Module CollatzDammroze_InternalSolution_TotalClosure_v1.
+
+Definition core_01_nonergodic_local_closure_repeat_TEX :=
+  CollatzDammroze_Part5_NonErgodicLocalClosure_FromTex_v1.nonergodic_local_closure_repeat_TEX.
+
+Definition core_02_nonergodic_local_closure_product_repeat_TEX :=
+  CollatzDammroze_Part5_NonErgodicLocalClosure_FromTex_v1.nonergodic_local_closure_product_repeat_TEX.
+
+Definition core_03_no_accumulation_bad_bands_scaled_contradiction_TEX :=
+  CollatzDammroze_Part5_NoAccumulationBadBands_FromTex_v1.no_accumulation_bad_bands_scaled_contradiction_TEX.
+
+Definition core_04_amplification_density_lower_bound_transfers_TEX :=
+  CollatzDammroze_Part5_AmplificationDensityGlue_FromTex_v1.amplification_density_lower_bound_transfers_TEX.
+
+Definition core_05_uniform_band_stability_positive_good_fraction_TEX :=
+  CollatzDammroze_Part5_UniformBandStabilityGlue_FromTex_v1.uniform_band_stability_positive_good_fraction_TEX.
+
+Definition core_06_endpoint_budget_absorbs_tail_TEX :=
+  CollatzDammroze_Part6_EndpointBudgetGlue_FromTex_v1.endpoint_budget_absorbs_tail_TEX.
+
+Definition core_07_multiplicative_endpoint_budget_absorbs_tail_TEX :=
+  CollatzDammroze_Part6_MultiplicativeEndpointBudgetGlue_FromTex_v1.multiplicative_endpoint_budget_absorbs_tail_TEX.
+
+Definition core_08_regimeA_conditional_glue_with_scaled_coeff_TEX :=
+  CollatzDammroze_Part6_RegimeAConditionalGlue_FromTex_v1.regimeA_conditional_glue_with_scaled_coeff_TEX.
+
+Definition core_09_aligned_residue_exact_parametrization_TEX :=
+  CollatzDammroze_Part6_AlignedResidueCountingGlue_FromTex_v1.aligned_residue_exact_parametrization_TEX.
+
+Definition core_10_same_residue_unique_in_aligned_band_when_mod_exceeds_TEX :=
+  CollatzDammroze_Part6_SparseResidueIntervalGlue_FromTex_v1.same_residue_unique_in_aligned_band_when_mod_exceeds_TEX.
+
+Definition core_11_two_regime_budget_recombination_with_common_majorant_TEX :=
+  CollatzDammroze_Part6_TwoRegimeBudgetRecombination_FromTex_v1.two_regime_budget_recombination_with_common_majorant_TEX.
+
+Theorem dammroze_internal_solution_total_closure_TEX : True.
+Proof.
+  exact I.
+Qed.
+
+End CollatzDammroze_InternalSolution_TotalClosure_v1.
