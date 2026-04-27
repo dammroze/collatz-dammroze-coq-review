@@ -24,6 +24,8 @@ Please open GitHub Issues with file name, theorem/lemma name, line number, comma
 ## Local check
 
 ```bash
+cd coq
 coqc --version
-coqc coq/Collatz_Dammroze_InternalSolution_TotalClosure_v1.v
+make clean || true
+make -j1
 ```
