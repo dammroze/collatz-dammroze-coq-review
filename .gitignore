@@ -12,3 +12,6 @@
 .DS_Store
 .vscode/
 .idea/
+coq/.Makefile.d
+coq/.lia.cache
+coq/.nia.cache
